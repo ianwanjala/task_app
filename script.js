@@ -21,6 +21,15 @@ window.addEventListener('load', () => {
         // make the task_conent_el a child of the task_el (div)
         task_el.appendChild(task_content_el);
 
+        //validating input first
+        if (document.getElementById('new-task-input').value == "") {
+
+            alert("Kindly input some task");
+            return false;
+        }
+        // create an input field to store the non-null task values
+
+
         // create an input field to store the task values
         const task_input_el = document.createElement('input');
         task_input_el.classList.add('text');
