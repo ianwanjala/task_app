@@ -7,6 +7,8 @@ window.addEventListener('load', () => {
         // Prevent page from reloading when submit button is clicked
         e.preventDefault();
 
+
+        
         // create a variable and assign the value of task input
         const task = input.value;
         // create a div eleemnt and assin it to variable task_el
@@ -36,6 +38,7 @@ window.addEventListener('load', () => {
         task_input_el.type = 'text';
         // assign the task to the input field created above
         task_input_el.value = task;
+       
 
         task_input_el.setAttribute("readonly", "readonly");
         task_content_el.appendChild(task_input_el);
@@ -46,6 +49,7 @@ window.addEventListener('load', () => {
         const task_edit_el = document.createElement('button');
         task_edit_el.classList.add('edit');
         task_edit_el.innerText = 'Edit';
+      
 
         const task_del_el = document.createElement('button');
         task_del_el.classList.add('delete');
