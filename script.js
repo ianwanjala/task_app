@@ -29,8 +29,6 @@ window.addEventListener('load', () => {
             alert("Kindly input some task");
             return false;
         }
-        // create an input field to store the non-null task values
-
 
         // create an input field to store the task values
         const task_input_el = document.createElement('input');

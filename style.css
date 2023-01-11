@@ -102,7 +102,7 @@ main {
 }
 
 .task_list {
-	padding: 1rem;
+	padding: 1rem; 
 	counter-reset: section;
 }
 
@@ -116,6 +116,9 @@ main {
 .task .content::before {
 	counter-increment: section;
 	content: counter(section) ". ";
+	color: black;
+	border-radius: 1rem;
+	width: 1.5cm;
 }
 
 .task {
@@ -131,6 +134,7 @@ main {
 
 	.task .content {
 		flex: 1 1 0%;
+		display:flex;
 	}
 
 		.task .content .text {
